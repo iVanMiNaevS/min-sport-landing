@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="header__row">
+				<div class="header__info-wrapp">
+					<div class="header__up-conent">
+						<h1>ГБПОУ "НОУОР имени В.С.Тишина"</h1>
+						<div class="tag tag-orange">В эксплуатации</div>
+					</div>
+					<div class="header__info">
+						<div class="header__grafic-job">
+							<span>График работы:</span>7:00 - 19:00
+						</div>
+						<div class="header__adress">
+							<span>Адрес:</span> просп. Гагарина, 25
+						</div>
+					</div>
+				</div>
+				<div class="header__block"></div>
+			</div>
+		</header>
+		<aside>
+			<div class="logo">
+				<img src="./imgs/logo.png" alt="logo" class="logo__img" />
+				<div class="logo-text">
+					<div class="logo-text__bold">
+						Министерство<br />
+						спорта
+					</div>
+					<div class="">
+						Нижегородская <br />
+						область
+					</div>
+				</div>
+			</div>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item active">
+						<a href="./index.html">Главная</a>
+					</li>
+					<li class="navigation__item">
+						<a href="./objects.html">Объекты</a>
+					</li>
+					<li class="navigation__item">
+						<a href="">Люди</a>
+					</li>
+					<li class="navigation__item">
+						<a href="">Учреждения</a>
+					</li>
+					<li class="navigation__item">
+						<a href="">Нагрузка на объекты</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main>
+			<section class="count-people -mt-20">
+				<div class="card-count-people">
+					<div class="card-count-people__up">
+						<h2 class="card-count-people__person">Спортсмены</h2>
+						<img src="./imgs/person-logo.svg" alt="person" />
+					</div>
+					<div class="card-count-people__count">
+						<span class="card-count-people__number">23 241</span>
+						человек
+					</div>
+				</div>
+				<div class="card-count-people not-gradient">
+					<div class="card-count-people__up">
+						<h2 class="card-count-people__person">Спортсмены</h2>
+						<img
+							class="card-count-people__person-logo"
+							src="./imgs/person-logo.svg"
+							alt="person"
+						/>
+					</div>
+					<div class="card-count-people__count">
+						<span class="card-count-people__number">23 241</span>
+						человек
+					</div>
+				</div>
+			</section>
+			<section class="total-classes">
+				<div class="total-classes__up">
+					<h2>Общее количество занятий</h2>
+					<div class="total-classes__func">
+						<div class="total-classes__input-wrapp">
+							<input type="date" name="" id="" class="date-picker" />
+						</div>
+						<button class="button button-primary">Скачать</button>
+					</div>
+				</div>
+				<div>
+					<canvas id="total-classes-chart" class="total-classes-chart"></canvas>
+				</div>
+			</section>
+			<section class="analytics">
+				<article class="size-group w-50">
+					<h2>Размеры спортивных групп</h2>
+					<div class="size-group__chart-wrapp">
+						<canvas id="size-group-chart" class="size-group-chart"></canvas>
+					</div>
+				</article>
+				<article class="analytics-sections w-50">
+					<h2>Аналитика секций</h2>
+					<button class="button button-primary analytics-sections__active-tab">
+						Посещаемость
+					</button>
+					<div class="analytics-sections_wrapp-tabs">
+						<button
+							class="button button-secondary w-50 analytics-sections__time-tab"
+						>
+							Время
+						</button>
+						<button
+							class="button button-primary w-50 analytics-sections__walk-tab"
+						>
+							Посещаемость
+						</button>
+					</div>
+					<div
+						class="analytics-sections__analytics analytics-sections__analytics-time hidden"
+					>
+						Время
+					</div>
+					<div
+						class="analytics-sections__analytics analytics-sections__analytics-walk"
+					>
+						<div class="analytics-sections__designation">
+							<div class="analytics-sections__designation-wrapp">
+								<div class="analytics-sections__walk">
+									<div class="analytics-sections_circle">
+										<div class="triangle" style="transform: rotate(370deg)">
+											<div class="circle" style="background: black"></div>
+										</div>
+										<div class="triangle" style="transform: rotate(280deg)">
+											<div class="circle" style="background: #6c6d6f"></div>
+										</div>
+										<div class="triangle" style="transform: rotate(190deg)">
+											<div class="circle" style="background: #b8babc"></div>
+										</div>
+										<div class="triangle" style="transform: rotate(100deg)">
+											<div class="circle" style="background: #e3e4e5"></div>
+										</div>
+									</div>
+									<span style="font-size: 13px">Ходят</span>
+								</div>
+								<div class="analytics-sections__not-walk">
+									<div class="analytics-sections__not-walk-circle"></div>
+									<span style="font-size: 13px">Не ходят</span>
+								</div>
+							</div>
+							<div style="font-size: 13px">(Человек)</div>
+						</div>
+						<div class="analytics-sections__progress-bars">
+							<div class="analytics-sections__progress-bar-wrapp football">
+								<div class="analytics-sections__progress-bar-label">Футбол</div>
+								<div class="analytics-sections__progress-bar">
+									<span class="analytics-sections__progress-bar-numbers">
+										<span class="analytics-sections__progress-bar-number1"
+											>2399</span
+										>/<span class="analytics-sections__progress-bar-number2"
+											>4233</span
+										>
+									</span>
+									<div class="analytics-sections__progress-bar-progress"></div>
+								</div>
+							</div>
+							<div class="analytics-sections__progress-bar-wrapp basketball">
+								<div class="analytics-sections__progress-bar-label">
+									Баскетбол
+								</div>
+								<div class="analytics-sections__progress-bar">
+									<span class="analytics-sections__progress-bar-numbers">
+										<span class="analytics-sections__progress-bar-number1"
+											>1394</span
+										>/<span class="analytics-sections__progress-bar-number2"
+											>2233</span
+										>
+									</span>
+									<div class="analytics-sections__progress-bar-progress"></div>
+								</div>
+							</div>
+							<div class="analytics-sections__progress-bar-wrapp hockey">
+								<div class="analytics-sections__progress-bar-label">Хоккей</div>
+								<div class="analytics-sections__progress-bar">
+									<span class="analytics-sections__progress-bar-numbers">
+										<span class="analytics-sections__progress-bar-number1"
+											>2394</span
+										>/<span class="analytics-sections__progress-bar-number2"
+											>2533</span
+										>
+									</span>
+									<div class="analytics-sections__progress-bar-progress"></div>
+								</div>
+							</div>
+							<div class="analytics-sections__progress-bar-wrapp gymnastic">
+								<div class="analytics-sections__progress-bar-label">
+									Гимнастика
+								</div>
+								<div class="analytics-sections__progress-bar">
+									<span class="analytics-sections__progress-bar-numbers">
+										<span class="analytics-sections__progress-bar-number1"
+											>3749</span
+										>/<span class="analytics-sections__progress-bar-number2"
+											>4233</span
+										>
+									</span>
+									<div class="analytics-sections__progress-bar-progress"></div>
+								</div>
+							</div>
+							<div class="analytics-sections__progress-bar-wrapp total">
+								<div class="analytics-sections__progress-bar-label">
+									Общая посещаемость
+								</div>
+								<div class="analytics-sections__progress-bar">
+									<span class="analytics-sections__progress-bar-numbers">
+										<span class="analytics-sections__progress-bar-number1"
+											>23 344</span
+										>/<span class="analytics-sections__progress-bar-number2"
+											>32 234</span
+										>
+									</span>
+									<div class="analytics-sections__progress-bar-progress"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="w-50 bar-article border-right">
+					<h2>Использование спортивного инвентаря</h2>
+					<canvas id="use-inventory-chart" class="use-inventory-chart"></canvas>
+				</article>
+				<article class="table-article w-50">
+					<div class="table-article__up">
+						<h2>Баскетбол</h2>
+						<div class="table-article__up-count">435шт</div>
+					</div>
+					<table class="table">
+						<tr class="table__header">
+							<th class="table__header-item enable">Наименование инвентаря</th>
+							<th class="table__header-item enable sort discrabed">
+								Количество <span class="table__header-item-dis">(штук)</span>
+							</th>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item input enable">
+								<input
+									class="table__body-item-input"
+									value="Баскетбольный мяч"
+								/>
+							</td>
+							<td class="table__body-item input enable">
+								<input class="table__body-item-input" value="16" />
+							</td>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item enable">
+								Баскетбольное кольцо с сеткой
+							</td>
+							<td class="table__body-item enable">1456</td>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item enable">Спортивная форма</td>
+							<td class="table__body-item enable">16</td>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item enable">Баскетбольная доска (щит)</td>
+							<td class="table__body-item enable">45</td>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item enable">
+								Защитные налокотники и наколенники
+							</td>
+							<td class="table__body-item enable">23</td>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item enable">
+								Спортивные часы с таймером
+							</td>
+							<td class="table__body-item enable">3387</td>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item enable">
+								Спортивные часы с таймером
+							</td>
+							<td class="table__body-item enable">3</td>
+						</tr>
+						<tr class="main-tr">
+							<td class="table__body-item enable">Спортивная форма</td>
+							<td class="table__body-item enable">5</td>
+						</tr>
+					</table>
+				</article>
+			</section>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script type="module" src="./externalHandlers.js"></script>
+		<script type="module" src="./main.js"></script>
+	</body>
+</html>

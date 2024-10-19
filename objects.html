@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="header__row">
+				<div class="header__info-wrapp">
+					<div class="header__up-conent">
+						<h1>Объекты</h1>
+						<div class="icon-dropp__wrapp">
+							<img src="./imgs/Icon-que.svg" alt="icon" class="icon-que" />
+							<div class="icon-dropp__text-wrapp down header__icon-dropp-text">
+								<div class="icon-dropp__text">
+									Данная информация образуется вручную, обновляется 1 раз в
+									месяц, точность будет повышена после введения определенной
+									системы. На данный момент погрешность 15%
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside>
+			<div class="logo">
+				<img src="./imgs/logo.png" alt="logo" class="logo__img" />
+				<div class="logo-text">
+					<div class="logo-text__bold">
+						Министерство<br />
+						спорта
+					</div>
+					<div class="">
+						Нижегородская <br />
+						область
+					</div>
+				</div>
+			</div>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="./index.html">Главная</a>
+					</li>
+					<li class="navigation__item active">
+						<a href="./objects.html">Объекты</a>
+					</li>
+					<li class="navigation__item">
+						<a href="">Люди</a>
+					</li>
+					<li class="navigation__item">
+						<a href="">Учреждения</a>
+					</li>
+					<li class="navigation__item">
+						<a href="">Нагрузка на объекты</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main>
+			<section class="map-sec map-container -mt-20">
+				<div class="map-sec__up">
+					<div class="drop-down-wrapp-first map-sec__drop-down-wrapp">
+						<div class="drop-down">
+							<span class="drop-down__selected-items-text">object1</span>
+							<span class="drop-down__count-select">1</span>
+						</div>
+						<div class="map-sec__mini-modal-wrapp">
+							<div class="mini-modal hidden">
+								<div class="option">
+									<input
+										class="input-checkbox"
+										id="object1"
+										value="object1"
+										type="checkbox"
+									/>
+									<label class="input-checkbox__label" for="object1"
+										>object1</label
+									>
+								</div>
+								<div class="option">
+									<input
+										class="input-checkbox"
+										id="object2"
+										value="object2"
+										type="checkbox"
+									/>
+									<label class="input-checkbox__label" for="object2"
+										>object2</label
+									>
+								</div>
+								<div class="option">
+									<input
+										class="input-checkbox"
+										id="object3"
+										value="object3"
+										type="checkbox"
+									/>
+									<label class="input-checkbox__label" for="object3"
+										>object3</label
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search-wrapp map-sec__search-wrapp">
+						<div class="search map-sec__search">
+							<div class="search-left">
+								<img
+									src="./imgs/search-icon.svg"
+									class="search__icon-search"
+									alt="search"
+								/>
+								<span class="search-text">Typing</span>
+							</div>
+							<div class="search-right">
+								<span class="search-count">1</span>
+								<img src="./imgs/x.svg" class="search-x" alt="x" />
+							</div>
+						</div>
+						<div class="mini-modal hidden search__mini-modal-parent">
+							<div class="search__drop-down-wrapp">
+								<div class="drop-down search-drop-down1">
+									<span class="drop-down__selected-items-text">object1</span>
+									<span class="drop-down__count-select">1</span>
+								</div>
+								<div class="search__mini-modal-wrapp">
+									<div class="mini-modal search__mini-modal-child1 hidden">
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="search-object1"
+												value="object1"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object1"
+												>object1</label
+											>
+										</div>
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="search-object2"
+												value="object2"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object2"
+												>object2</label
+											>
+										</div>
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="search-object3"
+												value="object3"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object3"
+												>object3</label
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search__drop-down-wrapp">
+								<div class="drop-down search-drop-down2">
+									<span class="drop-down__selected-items-text">object1</span>
+									<span class="drop-down__count-select">1</span>
+								</div>
+								<div class="search__mini-modal-wrapp">
+									<div class="mini-modal search__mini-modal-child2 hidden">
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="search-object21"
+												value="object1"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object21"
+												>object1</label
+											>
+										</div>
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="search-object22"
+												value="object2"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object22"
+												>object2</label
+											>
+										</div>
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="search-object23"
+												value="object3"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object23"
+												>object3</label
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search__drop-down-wrapp">
+								<div class="drop-down search-drop-down3">
+									<span class="drop-down__selected-items-text">object1</span>
+									<span class="drop-down__count-select">1</span>
+								</div>
+								<div class="search__mini-modal-wrapp">
+									<div class="mini-modal search__mini-modal-child3 hidden">
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="search-object31"
+												value="object1"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object31"
+												>object1</label
+											>
+										</div>
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="object32"
+												value="object2"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object32"
+												>object2</label
+											>
+										</div>
+										<div class="option">
+											<input
+												class="input-checkbox"
+												id="object33"
+												value="object3"
+												type="checkbox"
+											/>
+											<label class="input-checkbox__label" for="search-object33"
+												>object3</label
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search__mini-modal-parent-btns">
+								<button class="button button-secondary">
+									Сохранить фильтр
+								</button>
+								<button class="button button-primary">Найти</button>
+							</div>
+							<div class="search__mini-modal-parent-filters-sec">
+								<p>Фильтр</p>
+								<div class="search__mini-modal-parent-filters">
+									<div class="search__mini-modal-parent-filter tag tag-grey">
+										Фильтр
+									</div>
+									<div class="search__mini-modal-parent-filter tag tag-grey">
+										Фильтр
+									</div>
+									<div class="search__mini-modal-parent-filter tag tag-grey">
+										Фильтр
+									</div>
+									<div class="search__mini-modal-parent-filter tag tag-grey">
+										Фильтр
+									</div>
+									<div class="search__mini-modal-parent-filter tag tag-grey">
+										Фильтр
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="date" class="date-picker" />
+				</div>
+				<iframe
+					src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa51d7e99c7529e7dda781536425cab93aae4df035fdc39c7de5d4b17fd8ab59d&amp;source=constructor"
+					width="100%"
+					height="658"
+					frameborder="0"
+				></iframe>
+			</section>
+			<section class="table-article">
+				<div class="table-article__up">
+					<h2>Сводная таблица по объектам</h2>
+					<div class="table-article__up-count">435шт</div>
+				</div>
+				<table class="table table-with-options">
+					<tr class="table__header">
+						<th class="table__header-item enable">Наименование инвентаря</th>
+
+						<th class="table__header-item enable sort discrabed">
+							Персонал <span class="table__header-item-dis">(человек)</span>
+						</th>
+						<th class="table__header-item enable sort discrabed">
+							Обучающиеся <span class="table__header-item-dis">(человек)</span>
+						</th>
+						<th class="table__header-item enable sort discrabed">
+							График работы
+							<span class="table__header-item-dis">(человек)</span>
+						</th>
+						<th class="table__header-item focus sort discrabed">
+							Статус
+							<span class="table__header-item-dis">(человек)</span>
+						</th>
+						<td class="table__header-item enable"></td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item input enable">
+							<input
+								class="table__body-item-input"
+								value='ГБУ "НОСШОР "Дельфин"'
+							/>
+						</td>
+						<td class="table__body-item input enable">
+							<input class="table__body-item-input" value="16" />
+						</td>
+						<td class="table__body-item input enable">
+							<input class="table__body-item-input" value="1345" />
+						</td>
+						<td class="table__body-item input enable">
+							<input class="table__body-item-input" value="16" />
+						</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-purple">в эксплуатации</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-1">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-1">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item enable">
+							ГБУ НО «Региональный центр спортивной медицины»
+						</td>
+						<td class="table__body-item enable">1456</td>
+						<td class="table__body-item enable">231</td>
+						<td class="table__body-item enable">1456</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-purple">в эксплуатации</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-2">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-2">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item enable">
+							ГБУ НО «Региональный центр спортивной медицины»
+						</td>
+						<td class="table__body-item enable">16</td>
+						<td class="table__body-item enable">342</td>
+						<td class="table__body-item enable">16</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-orange">требующие ремонта</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-3">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-3">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item enable">ГБУ "НОСШОР "Дельфин"</td>
+						<td class="table__body-item enable">45</td>
+						<td class="table__body-item enable">45</td>
+						<td class="table__body-item enable">45</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-orange">требующие ремонта</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-4">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-4">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item enable">ГБУ "НОСШОР "Дельфин"</td>
+						<td class="table__body-item enable">23</td>
+						<td class="table__body-item enable">23</td>
+						<td class="table__body-item enable">23</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-orange">требующие ремонта</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-5">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-5">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item enable">
+							ГАУ НО "Дирекция по проведению спортивных и зрелищных мероприятий"
+						</td>
+						<td class="table__body-item enable">3387</td>
+						<td class="table__body-item enable">3387</td>
+						<td class="table__body-item enable">3387</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-blue">в строительстве</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-6">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-6">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item enable">
+							ГБУ НО «Региональный центр спортивной медицины»
+						</td>
+						<td class="table__body-item enable">3</td>
+						<td class="table__body-item enable">3</td>
+						<td class="table__body-item enable">3</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-blue">в строительстве</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-7">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-7">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="main-tr">
+						<td class="table__body-item enable">
+							ГАУ НО "Дирекция по проведению спортивных и зрелищных мероприятий"
+						</td>
+						<td class="table__body-item enable">5</td>
+						<td class="table__body-item enable">5</td>
+						<td class="table__body-item enable">5</td>
+						<td class="table__body-item enable">
+							<div class="tag-small tag-small-blue">в строительстве</div>
+						</td>
+						<td class="table__body-item enable text-center">
+							<div class="iconAndModal__wrapp">
+								<div class="icon-3dot" id="mini-modal-8">
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+									<div class="icon-3dot_dot"></div>
+								</div>
+								<div class="mini-modal__wrapp" id="mini-modal-8">
+									<div class="mini-modal">
+										<div class="option-edit option-iconAndText">
+											<img src="./imgs/pencil-square.svg" alt="редактировать" />
+											<span>Редактировать</span>
+										</div>
+										<div class="option-view option-iconAndText">
+											<img src="./imgs/eye-fill.svg" alt="Просмотр" />
+											<span>Просмотр</span>
+										</div>
+										<div class="option-upload option-iconAndText">
+											<img src="./imgs/upload.svg" alt="Скачать" />
+											<span>Скачать</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<div class="pagination__wrapp">
+				<div class="pagination">
+					<div class="pagination__item focus">1</div>
+					<div class="pagination__item">2</div>
+					<div class="pagination__item">3</div>
+					<div class="pagination__item">4</div>
+					<div class="pagination__item">5</div>
+					<div class="pagination__item">6</div>
+					<div class="pagination__item">7</div>
+				</div>
+			</div>
+		</main>
+		<script src="./table.js"></script>
+		<script src="./dropDown.js"></script>
+	</body>
+</html>
