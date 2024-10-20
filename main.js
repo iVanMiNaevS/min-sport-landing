@@ -128,31 +128,45 @@ new Chart(useInventory, {
 		datasets: [
 			{
 				label: "Спортивного инвентаря используется",
-				data: [65, 59, 80, 81, 56, 55, 40],
+				data: [65, 59, 80, 81, 100],
 				backgroundColor: ["#b8babc", "#d2c5e8", "#e3e4e5", "#b8babc"],
 				borderColor: ["transparent"],
 				borderWidth: 1,
 			},
 		],
 	},
+	plugins: [ChartDataLabels],
 	options: {
 		scales: {
 			y: {
 				display: false,
-				beginAtZero: true,
 			},
 		},
 		plugins: {
 			legend: {
 				display: false,
 			},
-			tooltips: {
+
+			tooltip: {
+				enabled: false,
 				backgroundColor: "#FAFAFA",
+			},
+			datalabels: {
+				// Position of the labels
+				// (start, end, center, etc.)
+				anchor: "end",
+				// Alignment of the labels
+				// (start, end, center, etc.)
+				align: "end",
+				// Color of the labels
+				offset: 2,
+				font: {
+					weight: "bold",
+				},
 			},
 		},
 	},
 });
-
 ////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////

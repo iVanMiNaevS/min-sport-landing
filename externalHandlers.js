@@ -115,12 +115,13 @@ export const externalTooltipHandlerDoughnut = (context) => {
 			const td1 = document.createElement("td1");
 			td1.style.borderRight = "1px solid #B8BABC";
 			td1.style.padding = "15px";
+			td1.style.fontSize = "32px";
 			const td2 = document.createElement("td2");
 			td2.style.padding = "15px";
+			td2.style.fontSize = "32px";
 
 			const text1 = document.createTextNode(30);
 			const text2 = document.createTextNode(body);
-
 			td1.appendChild(text1);
 			td1.appendChild(span1);
 			td2.appendChild(text2);
