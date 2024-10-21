@@ -78,7 +78,7 @@ new Chart(totalClassesChart, {
 		},
 	},
 });
-new Chart(sizeGroup, {
+let chart = new Chart(sizeGroup, {
 	type: "doughnut",
 	data: {
 		labels: ["Футбол", "Гимнастика", "Баскетбол", "Хоккей"],
@@ -97,10 +97,12 @@ new Chart(sizeGroup, {
 		plugins: {
 			legend: {
 				display: false,
+				position: "bottom",
 			},
 			tooltip: {
 				enabled: false,
 				position: "nearest",
+
 				// callbacks: {
 				// 	title: function () {
 				// 		return "занятий";
@@ -121,6 +123,8 @@ new Chart(sizeGroup, {
 		},
 	},
 });
+
+// console.log(myChart);
 new Chart(useInventory, {
 	type: "bar",
 	data: {
@@ -128,7 +132,7 @@ new Chart(useInventory, {
 		datasets: [
 			{
 				label: "Спортивного инвентаря используется",
-				data: [65, 59, 80, 81, 100],
+				data: [65, 59, 80, 81],
 				backgroundColor: ["#b8babc", "#d2c5e8", "#e3e4e5", "#b8babc"],
 				borderColor: ["transparent"],
 				borderWidth: 1,

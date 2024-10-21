@@ -1,8 +1,9 @@
 const getOrCreateTooltip = (chart) => {
-	let tooltipEl = chart.canvas.parentNode.querySelector("div");
+	let tooltipEl = chart.canvas.parentNode.querySelector(".tooltip");
 
 	if (!tooltipEl) {
 		tooltipEl = document.createElement("div");
+		tooltipEl.classList.add("tooltip");
 
 		tooltipEl.style.opacity = 1;
 		tooltipEl.style.pointerEvents = "none";
@@ -75,7 +76,7 @@ export const externalTooltipHandlerLine = (context) => {
 	tooltipEl.style.opacity = 1;
 	tooltipEl.style.left = positionX + tooltip.caretX + "px";
 	tooltipEl.style.top = positionY + tooltip.caretY + "px";
-	tooltipEl.style.padding = "20px";
+	tooltipEl.style.padding = "1.9vw";
 	tooltipEl.style.background = "#FCDED5";
 	tooltipEl.style.color = "black";
 	// tooltip.options.padding + "px " + tooltip.options.padding + "px";
@@ -150,6 +151,6 @@ export const externalTooltipHandlerDoughnut = (context) => {
 	tooltipEl.style.opacity = 1;
 	tooltipEl.style.left = positionX + tooltip.caretX + "px";
 	tooltipEl.style.top = positionY + tooltip.caretY + "px";
-	tooltipEl.style.padding = "20px";
+	tooltipEl.style.padding = "1.9vw";
 	// tooltip.options.padding + "px " + tooltip.options.padding + "px";
 };
